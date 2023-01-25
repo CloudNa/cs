@@ -1,0 +1,22 @@
+<?php 
+return array (
+  'platformcoupon_id' => 'int',
+  'platformcoupon_name' => 'string',
+  'platformcoupon_type_id' => 'int',
+  'platformcoupon_code' => 'string',
+  'member_id' => 'int',
+  'use_order_id' => 'string',
+  'at_least' => 'float',
+  'money' => 'float',
+  'state' => 'int',
+  'get_type' => 'int',
+  'fetch_time' => 'int',
+  'use_time' => 'int',
+  'end_time' => 'int',
+  'use_scenario' => 'int',
+  'group_ids' => 'string',
+  'platform_split_rare' => 'float',
+  'shop_split_rare' => 'float',
+  '_pk' => 'platformcoupon_id',
+  '_autoinc' => 'platformcoupon_id',
+);

@@ -1,0 +1,4 @@
+<?php
+//000000000000
+ exit();?>
+a:32:{s:7:"site_id";i:0;s:5:"title";s:12:"发展科技";s:4:"logo";s:0:"";s:4:"desc";s:0:"";s:8:"keywords";s:0:"";s:11:"web_address";s:0:"";s:10:"web_qrcode";s:0:"";s:9:"web_email";s:0:"";s:9:"web_phone";s:12:"400-886-7993";s:6:"web_qq";s:0:"";s:10:"web_weixin";s:0:"";s:10:"web_status";i:1;s:12:"close_reason";s:0:"";s:10:"wap_status";i:1;s:7:"account";s:4:"0.00";s:16:"account_withdraw";s:4:"0.00";s:12:"account_shop";s:4:"0.00";s:13:"account_order";s:4:"0.00";s:11:"create_time";i:1645435319;s:11:"modify_time";i:0;s:10:"wap_domain";s:0:"";s:12:"site_area_id";i:0;s:14:"site_area_name";s:6:"全国";s:8:"username";s:5:"admin";s:9:"shop_rate";s:4:"0.00";s:10:"order_rate";s:4:"0.00";s:28:"settlement_bank_account_name";s:0:"";s:30:"settlement_bank_account_number";s:0:"";s:20:"settlement_bank_name";s:0:"";s:23:"settlement_bank_address";s:0:"";s:6:"status";i:1;s:10:"web_domain";s:0:"";}

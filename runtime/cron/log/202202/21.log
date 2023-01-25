@@ -1,0 +1,332 @@
+[2022-02-21T17:22:03+08:00][info] 检测事件执行2022-02-21 17:22:03
+[2022-02-21T17:22:03+08:00][sql] CONNECT:[ UseTime:0.001239s ] mysql:host=127.0.0.1;port=3306;dbname=niushop1;charset=utf8
+[2022-02-21T17:22:03+08:00][sql] SHOW FULL COLUMNS FROM `cron` [ RunTime:0.002204s ]
+[2022-02-21T17:22:03+08:00][sql] SELECT `id`,`type`,`period`,`period_type`,`name`,`event`,`execute_time`,`relate_id`,`create_time` FROM `cron` WHERE  `execute_time` <= 1645435323 [ RunTime:0.000595s ]
+[2022-02-21T17:22:03+08:00][sql] SHOW FULL COLUMNS FROM `promotion_coupon` [ RunTime:0.001977s ]
+[2022-02-21T17:22:03+08:00][sql] UPDATE `promotion_coupon`  SET `state` = 3  WHERE  `state` = 1  AND `end_time` <= 1645435323 [ RunTime:0.000603s ]
+[2022-02-21T17:22:03+08:00][cron] event:data{"id":2,"type":2,"period":1,"period_type":0,"name":"\u4f18\u60e0\u5238\u8fc7\u671f\u81ea\u52a8\u5173\u95ed","event":"CronCouponEnd","execute_time":1645435317,"relate_id":0,"create_time":1645435317}
+[2022-02-21T17:22:03+08:00][sql] UPDATE `cron`  SET `execute_time` = 1645435377  WHERE  `id` = 2 [ RunTime:0.002723s ]
+[2022-02-21T17:22:03+08:00][sql] SHOW FULL COLUMNS FROM `promotion_platformcoupon` [ RunTime:0.001850s ]
+[2022-02-21T17:22:03+08:00][sql] UPDATE `promotion_platformcoupon`  SET `state` = 3  WHERE  `state` = 1  AND `end_time` <= 1645435323 [ RunTime:0.000499s ]
+[2022-02-21T17:22:03+08:00][cron] event:data{"id":5,"type":2,"period":1,"period_type":0,"name":"\u5e73\u53f0\u4f18\u60e0\u5238\u8fc7\u671f\u81ea\u52a8\u5173\u95ed","event":"CronPlatformcouponEnd","execute_time":1645435318,"relate_id":0,"create_time":1645435318}
+[2022-02-21T17:22:03+08:00][sql] UPDATE `cron`  SET `execute_time` = 1645435378  WHERE  `id` = 5 [ RunTime:0.002251s ]
+[2022-02-21T17:22:03+08:00][sql] SHOW FULL COLUMNS FROM `member_cluster` [ RunTime:0.002332s ]
+[2022-02-21T17:22:03+08:00][sql] SELECT `rule_json`,`cluster_id` FROM `member_cluster` [ RunTime:0.000338s ]
+[2022-02-21T17:22:03+08:00][cron] event:data{"id":10,"type":2,"period":1,"period_type":0,"name":"\u4f1a\u5458\u7fa4\u4f53\u5b9a\u65f6\u5237\u65b0","event":"CronMemberClusterRefresh","execute_time":1645435319,"relate_id":0,"create_time":1645435319}
+[2022-02-21T17:22:03+08:00][sql] UPDATE `cron`  SET `execute_time` = 1645435379  WHERE  `id` = 10 [ RunTime:0.002384s ]
+[2022-02-21T17:23:03+08:00][info] 检测事件执行2022-02-21 17:23:03
+[2022-02-21T17:23:03+08:00][sql] CONNECT:[ UseTime:0.001080s ] mysql:host=127.0.0.1;port=3306;dbname=niushop1;charset=utf8
+[2022-02-21T17:23:03+08:00][sql] SELECT `id`,`type`,`period`,`period_type`,`name`,`event`,`execute_time`,`relate_id`,`create_time` FROM `cron` WHERE  `execute_time` <= 1645435383 [ RunTime:0.000847s ]
+[2022-02-21T17:23:03+08:00][sql] UPDATE `promotion_coupon`  SET `state` = 3  WHERE  `state` = 1  AND `end_time` <= 1645435383 [ RunTime:0.000578s ]
+[2022-02-21T17:23:03+08:00][cron] event:data{"id":2,"type":2,"period":1,"period_type":0,"name":"\u4f18\u60e0\u5238\u8fc7\u671f\u81ea\u52a8\u5173\u95ed","event":"CronCouponEnd","execute_time":1645435377,"relate_id":0,"create_time":1645435317}
+[2022-02-21T17:23:03+08:00][sql] UPDATE `cron`  SET `execute_time` = 1645435437  WHERE  `id` = 2 [ RunTime:0.002892s ]
+[2022-02-21T17:23:03+08:00][sql] UPDATE `promotion_platformcoupon`  SET `state` = 3  WHERE  `state` = 1  AND `end_time` <= 1645435383 [ RunTime:0.000393s ]
+[2022-02-21T17:23:03+08:00][cron] event:data{"id":5,"type":2,"period":1,"period_type":0,"name":"\u5e73\u53f0\u4f18\u60e0\u5238\u8fc7\u671f\u81ea\u52a8\u5173\u95ed","event":"CronPlatformcouponEnd","execute_time":1645435378,"relate_id":0,"create_time":1645435318}
+[2022-02-21T17:23:03+08:00][sql] UPDATE `cron`  SET `execute_time` = 1645435438  WHERE  `id` = 5 [ RunTime:0.001841s ]
+[2022-02-21T17:23:03+08:00][sql] SELECT `rule_json`,`cluster_id` FROM `member_cluster` [ RunTime:0.000395s ]
+[2022-02-21T17:23:03+08:00][cron] event:data{"id":10,"type":2,"period":1,"period_type":0,"name":"\u4f1a\u5458\u7fa4\u4f53\u5b9a\u65f6\u5237\u65b0","event":"CronMemberClusterRefresh","execute_time":1645435379,"relate_id":0,"create_time":1645435319}
+[2022-02-21T17:23:03+08:00][sql] UPDATE `cron`  SET `execute_time` = 1645435439  WHERE  `id` = 10 [ RunTime:0.002000s ]
+[2022-02-21T17:24:04+08:00][info] 检测事件执行2022-02-21 17:24:04
+[2022-02-21T17:24:04+08:00][sql] CONNECT:[ UseTime:0.001023s ] mysql:host=127.0.0.1;port=3306;dbname=niushop1;charset=utf8
+[2022-02-21T17:24:04+08:00][sql] SELECT `id`,`type`,`period`,`period_type`,`name`,`event`,`execute_time`,`relate_id`,`create_time` FROM `cron` WHERE  `execute_time` <= 1645435444 [ RunTime:0.000661s ]
+[2022-02-21T17:24:04+08:00][sql] UPDATE `promotion_coupon`  SET `state` = 3  WHERE  `state` = 1  AND `end_time` <= 1645435444 [ RunTime:0.000675s ]
+[2022-02-21T17:24:04+08:00][cron] event:data{"id":2,"type":2,"period":1,"period_type":0,"name":"\u4f18\u60e0\u5238\u8fc7\u671f\u81ea\u52a8\u5173\u95ed","event":"CronCouponEnd","execute_time":1645435437,"relate_id":0,"create_time":1645435317}
+[2022-02-21T17:24:04+08:00][sql] UPDATE `cron`  SET `execute_time` = 1645435497  WHERE  `id` = 2 [ RunTime:0.002976s ]
+[2022-02-21T17:24:04+08:00][sql] UPDATE `promotion_platformcoupon`  SET `state` = 3  WHERE  `state` = 1  AND `end_time` <= 1645435444 [ RunTime:0.000655s ]
+[2022-02-21T17:24:04+08:00][cron] event:data{"id":5,"type":2,"period":1,"period_type":0,"name":"\u5e73\u53f0\u4f18\u60e0\u5238\u8fc7\u671f\u81ea\u52a8\u5173\u95ed","event":"CronPlatformcouponEnd","execute_time":1645435438,"relate_id":0,"create_time":1645435318}
+[2022-02-21T17:24:04+08:00][sql] UPDATE `cron`  SET `execute_time` = 1645435498  WHERE  `id` = 5 [ RunTime:0.002434s ]
+[2022-02-21T17:24:04+08:00][sql] SELECT `rule_json`,`cluster_id` FROM `member_cluster` [ RunTime:0.000480s ]
+[2022-02-21T17:24:04+08:00][cron] event:data{"id":10,"type":2,"period":1,"period_type":0,"name":"\u4f1a\u5458\u7fa4\u4f53\u5b9a\u65f6\u5237\u65b0","event":"CronMemberClusterRefresh","execute_time":1645435439,"relate_id":0,"create_time":1645435319}
+[2022-02-21T17:24:04+08:00][sql] UPDATE `cron`  SET `execute_time` = 1645435499  WHERE  `id` = 10 [ RunTime:0.002725s ]
+[2022-02-21T17:29:29+08:00][info] 检测事件执行2022-02-21 17:29:29
+[2022-02-21T17:29:29+08:00][sql] CONNECT:[ UseTime:0.001962s ] mysql:host=127.0.0.1;port=3306;dbname=niushop1;charset=utf8
+[2022-02-21T17:29:29+08:00][sql] SELECT `id`,`type`,`period`,`period_type`,`name`,`event`,`execute_time`,`relate_id`,`create_time` FROM `cron` WHERE  `execute_time` <= 1645435769 [ RunTime:0.001003s ]
+[2022-02-21T17:29:29+08:00][sql] UPDATE `promotion_coupon`  SET `state` = 3  WHERE  `state` = 1  AND `end_time` <= 1645435769 [ RunTime:0.000700s ]
+[2022-02-21T17:29:29+08:00][cron] event:data{"id":2,"type":2,"period":1,"period_type":0,"name":"\u4f18\u60e0\u5238\u8fc7\u671f\u81ea\u52a8\u5173\u95ed","event":"CronCouponEnd","execute_time":1645435497,"relate_id":0,"create_time":1645435317}
+[2022-02-21T17:29:29+08:00][sql] UPDATE `cron`  SET `execute_time` = 1645435557  WHERE  `id` = 2 [ RunTime:0.003195s ]
+[2022-02-21T17:29:29+08:00][sql] UPDATE `promotion_platformcoupon`  SET `state` = 3  WHERE  `state` = 1  AND `end_time` <= 1645435769 [ RunTime:0.000551s ]
+[2022-02-21T17:29:29+08:00][cron] event:data{"id":5,"type":2,"period":1,"period_type":0,"name":"\u5e73\u53f0\u4f18\u60e0\u5238\u8fc7\u671f\u81ea\u52a8\u5173\u95ed","event":"CronPlatformcouponEnd","execute_time":1645435498,"relate_id":0,"create_time":1645435318}
+[2022-02-21T17:29:29+08:00][sql] UPDATE `cron`  SET `execute_time` = 1645435558  WHERE  `id` = 5 [ RunTime:0.002240s ]
+[2022-02-21T17:29:29+08:00][sql] SELECT `rule_json`,`cluster_id` FROM `member_cluster` [ RunTime:0.000434s ]
+[2022-02-21T17:29:29+08:00][cron] event:data{"id":10,"type":2,"period":1,"period_type":0,"name":"\u4f1a\u5458\u7fa4\u4f53\u5b9a\u65f6\u5237\u65b0","event":"CronMemberClusterRefresh","execute_time":1645435499,"relate_id":0,"create_time":1645435319}
+[2022-02-21T17:29:29+08:00][sql] UPDATE `cron`  SET `execute_time` = 1645435559  WHERE  `id` = 10 [ RunTime:0.002001s ]
+[2022-02-21T17:29:50+08:00][info] 检测事件执行2022-02-21 17:29:50
+[2022-02-21T17:29:50+08:00][sql] CONNECT:[ UseTime:0.001203s ] mysql:host=127.0.0.1;port=3306;dbname=niushop1;charset=utf8
+[2022-02-21T17:29:50+08:00][sql] SHOW FULL COLUMNS FROM `cron` [ RunTime:0.002457s ]
+[2022-02-21T17:29:50+08:00][sql] SELECT `id`,`type`,`period`,`period_type`,`name`,`event`,`execute_time`,`relate_id`,`create_time` FROM `cron` WHERE  `execute_time` <= 1645435790 [ RunTime:0.000736s ]
+[2022-02-21T17:29:50+08:00][sql] SHOW FULL COLUMNS FROM `promotion_coupon` [ RunTime:0.002196s ]
+[2022-02-21T17:29:50+08:00][sql] UPDATE `promotion_coupon`  SET `state` = 3  WHERE  `state` = 1  AND `end_time` <= 1645435790 [ RunTime:0.000611s ]
+[2022-02-21T17:29:50+08:00][cron] event:data{"id":2,"type":2,"period":1,"period_type":0,"name":"\u4f18\u60e0\u5238\u8fc7\u671f\u81ea\u52a8\u5173\u95ed","event":"CronCouponEnd","execute_time":1645435557,"relate_id":0,"create_time":1645435317}
+[2022-02-21T17:29:50+08:00][sql] UPDATE `cron`  SET `execute_time` = 1645435617  WHERE  `id` = 2 [ RunTime:0.002817s ]
+[2022-02-21T17:29:50+08:00][sql] SHOW FULL COLUMNS FROM `promotion_platformcoupon` [ RunTime:0.001936s ]
+[2022-02-21T17:29:50+08:00][sql] UPDATE `promotion_platformcoupon`  SET `state` = 3  WHERE  `state` = 1  AND `end_time` <= 1645435790 [ RunTime:0.000493s ]
+[2022-02-21T17:29:50+08:00][cron] event:data{"id":5,"type":2,"period":1,"period_type":0,"name":"\u5e73\u53f0\u4f18\u60e0\u5238\u8fc7\u671f\u81ea\u52a8\u5173\u95ed","event":"CronPlatformcouponEnd","execute_time":1645435558,"relate_id":0,"create_time":1645435318}
+[2022-02-21T17:29:50+08:00][sql] UPDATE `cron`  SET `execute_time` = 1645435618  WHERE  `id` = 5 [ RunTime:0.002209s ]
+[2022-02-21T17:29:50+08:00][sql] SHOW FULL COLUMNS FROM `member_cluster` [ RunTime:0.001755s ]
+[2022-02-21T17:29:50+08:00][sql] SELECT `rule_json`,`cluster_id` FROM `member_cluster` [ RunTime:0.000403s ]
+[2022-02-21T17:29:50+08:00][cron] event:data{"id":10,"type":2,"period":1,"period_type":0,"name":"\u4f1a\u5458\u7fa4\u4f53\u5b9a\u65f6\u5237\u65b0","event":"CronMemberClusterRefresh","execute_time":1645435559,"relate_id":0,"create_time":1645435319}
+[2022-02-21T17:29:50+08:00][sql] UPDATE `cron`  SET `execute_time` = 1645435619  WHERE  `id` = 10 [ RunTime:0.002338s ]
+[2022-02-21T17:30:29+08:00][info] 检测事件执行2022-02-21 17:30:29
+[2022-02-21T17:30:29+08:00][sql] CONNECT:[ UseTime:0.001158s ] mysql:host=127.0.0.1;port=3306;dbname=niushop1;charset=utf8
+[2022-02-21T17:30:29+08:00][sql] SELECT `id`,`type`,`period`,`period_type`,`name`,`event`,`execute_time`,`relate_id`,`create_time` FROM `cron` WHERE  `execute_time` <= 1645435829 [ RunTime:0.000893s ]
+[2022-02-21T17:30:29+08:00][sql] UPDATE `promotion_coupon`  SET `state` = 3  WHERE  `state` = 1  AND `end_time` <= 1645435829 [ RunTime:0.000615s ]
+[2022-02-21T17:30:29+08:00][cron] event:data{"id":2,"type":2,"period":1,"period_type":0,"name":"\u4f18\u60e0\u5238\u8fc7\u671f\u81ea\u52a8\u5173\u95ed","event":"CronCouponEnd","execute_time":1645435617,"relate_id":0,"create_time":1645435317}
+[2022-02-21T17:30:29+08:00][sql] UPDATE `cron`  SET `execute_time` = 1645435677  WHERE  `id` = 2 [ RunTime:0.004298s ]
+[2022-02-21T17:30:29+08:00][sql] UPDATE `promotion_platformcoupon`  SET `state` = 3  WHERE  `state` = 1  AND `end_time` <= 1645435829 [ RunTime:0.000537s ]
+[2022-02-21T17:30:29+08:00][cron] event:data{"id":5,"type":2,"period":1,"period_type":0,"name":"\u5e73\u53f0\u4f18\u60e0\u5238\u8fc7\u671f\u81ea\u52a8\u5173\u95ed","event":"CronPlatformcouponEnd","execute_time":1645435618,"relate_id":0,"create_time":1645435318}
+[2022-02-21T17:30:29+08:00][sql] UPDATE `cron`  SET `execute_time` = 1645435678  WHERE  `id` = 5 [ RunTime:0.002418s ]
+[2022-02-21T17:30:29+08:00][sql] SELECT `rule_json`,`cluster_id` FROM `member_cluster` [ RunTime:0.000507s ]
+[2022-02-21T17:30:29+08:00][cron] event:data{"id":10,"type":2,"period":1,"period_type":0,"name":"\u4f1a\u5458\u7fa4\u4f53\u5b9a\u65f6\u5237\u65b0","event":"CronMemberClusterRefresh","execute_time":1645435619,"relate_id":0,"create_time":1645435319}
+[2022-02-21T17:30:29+08:00][sql] UPDATE `cron`  SET `execute_time` = 1645435679  WHERE  `id` = 10 [ RunTime:0.002375s ]
+[2022-02-21T17:30:50+08:00][info] 检测事件执行2022-02-21 17:30:50
+[2022-02-21T17:30:50+08:00][sql] CONNECT:[ UseTime:0.000962s ] mysql:host=127.0.0.1;port=3306;dbname=niushop1;charset=utf8
+[2022-02-21T17:30:50+08:00][sql] SELECT `id`,`type`,`period`,`period_type`,`name`,`event`,`execute_time`,`relate_id`,`create_time` FROM `cron` WHERE  `execute_time` <= 1645435850 [ RunTime:0.000870s ]
+[2022-02-21T17:30:50+08:00][sql] UPDATE `promotion_coupon`  SET `state` = 3  WHERE  `state` = 1  AND `end_time` <= 1645435850 [ RunTime:0.000634s ]
+[2022-02-21T17:30:50+08:00][cron] event:data{"id":2,"type":2,"period":1,"period_type":0,"name":"\u4f18\u60e0\u5238\u8fc7\u671f\u81ea\u52a8\u5173\u95ed","event":"CronCouponEnd","execute_time":1645435677,"relate_id":0,"create_time":1645435317}
+[2022-02-21T17:30:50+08:00][sql] UPDATE `cron`  SET `execute_time` = 1645435737  WHERE  `id` = 2 [ RunTime:0.005880s ]
+[2022-02-21T17:30:50+08:00][sql] UPDATE `promotion_platformcoupon`  SET `state` = 3  WHERE  `state` = 1  AND `end_time` <= 1645435850 [ RunTime:0.000497s ]
+[2022-02-21T17:30:50+08:00][cron] event:data{"id":5,"type":2,"period":1,"period_type":0,"name":"\u5e73\u53f0\u4f18\u60e0\u5238\u8fc7\u671f\u81ea\u52a8\u5173\u95ed","event":"CronPlatformcouponEnd","execute_time":1645435678,"relate_id":0,"create_time":1645435318}
+[2022-02-21T17:30:50+08:00][sql] UPDATE `cron`  SET `execute_time` = 1645435738  WHERE  `id` = 5 [ RunTime:0.003026s ]
+[2022-02-21T17:30:50+08:00][sql] SELECT `rule_json`,`cluster_id` FROM `member_cluster` [ RunTime:0.000425s ]
+[2022-02-21T17:30:50+08:00][cron] event:data{"id":10,"type":2,"period":1,"period_type":0,"name":"\u4f1a\u5458\u7fa4\u4f53\u5b9a\u65f6\u5237\u65b0","event":"CronMemberClusterRefresh","execute_time":1645435679,"relate_id":0,"create_time":1645435319}
+[2022-02-21T17:30:50+08:00][sql] UPDATE `cron`  SET `execute_time` = 1645435739  WHERE  `id` = 10 [ RunTime:0.002937s ]
+[2022-02-21T17:31:29+08:00][info] 检测事件执行2022-02-21 17:31:29
+[2022-02-21T17:31:29+08:00][sql] CONNECT:[ UseTime:0.001351s ] mysql:host=127.0.0.1;port=3306;dbname=niushop1;charset=utf8
+[2022-02-21T17:31:29+08:00][sql] SELECT `id`,`type`,`period`,`period_type`,`name`,`event`,`execute_time`,`relate_id`,`create_time` FROM `cron` WHERE  `execute_time` <= 1645435889 [ RunTime:0.000717s ]
+[2022-02-21T17:31:29+08:00][sql] UPDATE `promotion_coupon`  SET `state` = 3  WHERE  `state` = 1  AND `end_time` <= 1645435889 [ RunTime:0.000689s ]
+[2022-02-21T17:31:29+08:00][cron] event:data{"id":2,"type":2,"period":1,"period_type":0,"name":"\u4f18\u60e0\u5238\u8fc7\u671f\u81ea\u52a8\u5173\u95ed","event":"CronCouponEnd","execute_time":1645435737,"relate_id":0,"create_time":1645435317}
+[2022-02-21T17:31:29+08:00][sql] UPDATE `cron`  SET `execute_time` = 1645435797  WHERE  `id` = 2 [ RunTime:0.002719s ]
+[2022-02-21T17:31:29+08:00][sql] UPDATE `promotion_platformcoupon`  SET `state` = 3  WHERE  `state` = 1  AND `end_time` <= 1645435889 [ RunTime:0.000507s ]
+[2022-02-21T17:31:29+08:00][cron] event:data{"id":5,"type":2,"period":1,"period_type":0,"name":"\u5e73\u53f0\u4f18\u60e0\u5238\u8fc7\u671f\u81ea\u52a8\u5173\u95ed","event":"CronPlatformcouponEnd","execute_time":1645435738,"relate_id":0,"create_time":1645435318}
+[2022-02-21T17:31:29+08:00][sql] UPDATE `cron`  SET `execute_time` = 1645435798  WHERE  `id` = 5 [ RunTime:0.002540s ]
+[2022-02-21T17:31:29+08:00][sql] SELECT `rule_json`,`cluster_id` FROM `member_cluster` [ RunTime:0.000364s ]
+[2022-02-21T17:31:29+08:00][cron] event:data{"id":10,"type":2,"period":1,"period_type":0,"name":"\u4f1a\u5458\u7fa4\u4f53\u5b9a\u65f6\u5237\u65b0","event":"CronMemberClusterRefresh","execute_time":1645435739,"relate_id":0,"create_time":1645435319}
+[2022-02-21T17:31:29+08:00][sql] UPDATE `cron`  SET `execute_time` = 1645435799  WHERE  `id` = 10 [ RunTime:0.001940s ]
+[2022-02-21T17:31:50+08:00][info] 检测事件执行2022-02-21 17:31:50
+[2022-02-21T17:31:50+08:00][sql] CONNECT:[ UseTime:0.001114s ] mysql:host=127.0.0.1;port=3306;dbname=niushop1;charset=utf8
+[2022-02-21T17:31:50+08:00][sql] SELECT `id`,`type`,`period`,`period_type`,`name`,`event`,`execute_time`,`relate_id`,`create_time` FROM `cron` WHERE  `execute_time` <= 1645435910 [ RunTime:0.001048s ]
+[2022-02-21T17:31:50+08:00][sql] UPDATE `promotion_coupon`  SET `state` = 3  WHERE  `state` = 1  AND `end_time` <= 1645435910 [ RunTime:0.000816s ]
+[2022-02-21T17:31:50+08:00][cron] event:data{"id":2,"type":2,"period":1,"period_type":0,"name":"\u4f18\u60e0\u5238\u8fc7\u671f\u81ea\u52a8\u5173\u95ed","event":"CronCouponEnd","execute_time":1645435797,"relate_id":0,"create_time":1645435317}
+[2022-02-21T17:31:50+08:00][sql] UPDATE `cron`  SET `execute_time` = 1645435857  WHERE  `id` = 2 [ RunTime:0.007525s ]
+[2022-02-21T17:31:50+08:00][sql] UPDATE `promotion_platformcoupon`  SET `state` = 3  WHERE  `state` = 1  AND `end_time` <= 1645435910 [ RunTime:0.000603s ]
+[2022-02-21T17:31:50+08:00][cron] event:data{"id":5,"type":2,"period":1,"period_type":0,"name":"\u5e73\u53f0\u4f18\u60e0\u5238\u8fc7\u671f\u81ea\u52a8\u5173\u95ed","event":"CronPlatformcouponEnd","execute_time":1645435798,"relate_id":0,"create_time":1645435318}
+[2022-02-21T17:31:50+08:00][sql] UPDATE `cron`  SET `execute_time` = 1645435858  WHERE  `id` = 5 [ RunTime:0.003191s ]
+[2022-02-21T17:31:50+08:00][sql] SELECT `rule_json`,`cluster_id` FROM `member_cluster` [ RunTime:0.000407s ]
+[2022-02-21T17:31:50+08:00][cron] event:data{"id":10,"type":2,"period":1,"period_type":0,"name":"\u4f1a\u5458\u7fa4\u4f53\u5b9a\u65f6\u5237\u65b0","event":"CronMemberClusterRefresh","execute_time":1645435799,"relate_id":0,"create_time":1645435319}
+[2022-02-21T17:31:50+08:00][sql] UPDATE `cron`  SET `execute_time` = 1645435859  WHERE  `id` = 10 [ RunTime:0.002646s ]
+[2022-02-21T17:32:29+08:00][info] 检测事件执行2022-02-21 17:32:29
+[2022-02-21T17:32:29+08:00][sql] CONNECT:[ UseTime:0.000952s ] mysql:host=127.0.0.1;port=3306;dbname=niushop1;charset=utf8
+[2022-02-21T17:32:29+08:00][sql] SELECT `id`,`type`,`period`,`period_type`,`name`,`event`,`execute_time`,`relate_id`,`create_time` FROM `cron` WHERE  `execute_time` <= 1645435949 [ RunTime:0.000756s ]
+[2022-02-21T17:32:29+08:00][sql] UPDATE `promotion_coupon`  SET `state` = 3  WHERE  `state` = 1  AND `end_time` <= 1645435949 [ RunTime:0.000586s ]
+[2022-02-21T17:32:29+08:00][cron] event:data{"id":2,"type":2,"period":1,"period_type":0,"name":"\u4f18\u60e0\u5238\u8fc7\u671f\u81ea\u52a8\u5173\u95ed","event":"CronCouponEnd","execute_time":1645435857,"relate_id":0,"create_time":1645435317}
+[2022-02-21T17:32:29+08:00][sql] UPDATE `cron`  SET `execute_time` = 1645435917  WHERE  `id` = 2 [ RunTime:0.008340s ]
+[2022-02-21T17:32:29+08:00][sql] UPDATE `promotion_platformcoupon`  SET `state` = 3  WHERE  `state` = 1  AND `end_time` <= 1645435949 [ RunTime:0.000516s ]
+[2022-02-21T17:32:29+08:00][cron] event:data{"id":5,"type":2,"period":1,"period_type":0,"name":"\u5e73\u53f0\u4f18\u60e0\u5238\u8fc7\u671f\u81ea\u52a8\u5173\u95ed","event":"CronPlatformcouponEnd","execute_time":1645435858,"relate_id":0,"create_time":1645435318}
+[2022-02-21T17:32:29+08:00][sql] UPDATE `cron`  SET `execute_time` = 1645435918  WHERE  `id` = 5 [ RunTime:0.002278s ]
+[2022-02-21T17:32:29+08:00][sql] SELECT `rule_json`,`cluster_id` FROM `member_cluster` [ RunTime:0.000480s ]
+[2022-02-21T17:32:29+08:00][cron] event:data{"id":10,"type":2,"period":1,"period_type":0,"name":"\u4f1a\u5458\u7fa4\u4f53\u5b9a\u65f6\u5237\u65b0","event":"CronMemberClusterRefresh","execute_time":1645435859,"relate_id":0,"create_time":1645435319}
+[2022-02-21T17:32:29+08:00][sql] UPDATE `cron`  SET `execute_time` = 1645435919  WHERE  `id` = 10 [ RunTime:0.002539s ]
+[2022-02-21T17:32:50+08:00][info] 检测事件执行2022-02-21 17:32:50
+[2022-02-21T17:32:50+08:00][sql] CONNECT:[ UseTime:0.000962s ] mysql:host=127.0.0.1;port=3306;dbname=niushop1;charset=utf8
+[2022-02-21T17:32:50+08:00][sql] SELECT `id`,`type`,`period`,`period_type`,`name`,`event`,`execute_time`,`relate_id`,`create_time` FROM `cron` WHERE  `execute_time` <= 1645435970 [ RunTime:0.000720s ]
+[2022-02-21T17:32:50+08:00][sql] UPDATE `promotion_coupon`  SET `state` = 3  WHERE  `state` = 1  AND `end_time` <= 1645435970 [ RunTime:0.000745s ]
+[2022-02-21T17:32:50+08:00][cron] event:data{"id":2,"type":2,"period":1,"period_type":0,"name":"\u4f18\u60e0\u5238\u8fc7\u671f\u81ea\u52a8\u5173\u95ed","event":"CronCouponEnd","execute_time":1645435917,"relate_id":0,"create_time":1645435317}
+[2022-02-21T17:32:50+08:00][sql] UPDATE `cron`  SET `execute_time` = 1645435977  WHERE  `id` = 2 [ RunTime:0.006794s ]
+[2022-02-21T17:32:50+08:00][sql] UPDATE `promotion_platformcoupon`  SET `state` = 3  WHERE  `state` = 1  AND `end_time` <= 1645435970 [ RunTime:0.000513s ]
+[2022-02-21T17:32:50+08:00][cron] event:data{"id":5,"type":2,"period":1,"period_type":0,"name":"\u5e73\u53f0\u4f18\u60e0\u5238\u8fc7\u671f\u81ea\u52a8\u5173\u95ed","event":"CronPlatformcouponEnd","execute_time":1645435918,"relate_id":0,"create_time":1645435318}
+[2022-02-21T17:32:50+08:00][sql] UPDATE `cron`  SET `execute_time` = 1645435978  WHERE  `id` = 5 [ RunTime:0.003033s ]
+[2022-02-21T17:32:50+08:00][sql] SELECT `rule_json`,`cluster_id` FROM `member_cluster` [ RunTime:0.000392s ]
+[2022-02-21T17:32:50+08:00][cron] event:data{"id":10,"type":2,"period":1,"period_type":0,"name":"\u4f1a\u5458\u7fa4\u4f53\u5b9a\u65f6\u5237\u65b0","event":"CronMemberClusterRefresh","execute_time":1645435919,"relate_id":0,"create_time":1645435319}
+[2022-02-21T17:32:50+08:00][sql] UPDATE `cron`  SET `execute_time` = 1645435979  WHERE  `id` = 10 [ RunTime:0.002953s ]
+[2022-02-21T17:33:29+08:00][info] 检测事件执行2022-02-21 17:33:29
+[2022-02-21T17:33:29+08:00][sql] CONNECT:[ UseTime:0.001951s ] mysql:host=127.0.0.1;port=3306;dbname=niushop1;charset=utf8
+[2022-02-21T17:33:29+08:00][sql] SELECT `id`,`type`,`period`,`period_type`,`name`,`event`,`execute_time`,`relate_id`,`create_time` FROM `cron` WHERE  `execute_time` <= 1645436009 [ RunTime:0.001664s ]
+[2022-02-21T17:33:29+08:00][sql] UPDATE `promotion_coupon`  SET `state` = 3  WHERE  `state` = 1  AND `end_time` <= 1645436009 [ RunTime:0.000632s ]
+[2022-02-21T17:33:29+08:00][cron] event:data{"id":2,"type":2,"period":1,"period_type":0,"name":"\u4f18\u60e0\u5238\u8fc7\u671f\u81ea\u52a8\u5173\u95ed","event":"CronCouponEnd","execute_time":1645435977,"relate_id":0,"create_time":1645435317}
+[2022-02-21T17:33:29+08:00][sql] UPDATE `cron`  SET `execute_time` = 1645436037  WHERE  `id` = 2 [ RunTime:0.003263s ]
+[2022-02-21T17:33:29+08:00][sql] UPDATE `promotion_platformcoupon`  SET `state` = 3  WHERE  `state` = 1  AND `end_time` <= 1645436009 [ RunTime:0.000600s ]
+[2022-02-21T17:33:29+08:00][cron] event:data{"id":5,"type":2,"period":1,"period_type":0,"name":"\u5e73\u53f0\u4f18\u60e0\u5238\u8fc7\u671f\u81ea\u52a8\u5173\u95ed","event":"CronPlatformcouponEnd","execute_time":1645435978,"relate_id":0,"create_time":1645435318}
+[2022-02-21T17:33:29+08:00][sql] UPDATE `cron`  SET `execute_time` = 1645436038  WHERE  `id` = 5 [ RunTime:0.002501s ]
+[2022-02-21T17:33:29+08:00][sql] SELECT `rule_json`,`cluster_id` FROM `member_cluster` [ RunTime:0.000551s ]
+[2022-02-21T17:33:29+08:00][cron] event:data{"id":10,"type":2,"period":1,"period_type":0,"name":"\u4f1a\u5458\u7fa4\u4f53\u5b9a\u65f6\u5237\u65b0","event":"CronMemberClusterRefresh","execute_time":1645435979,"relate_id":0,"create_time":1645435319}
+[2022-02-21T17:33:29+08:00][sql] UPDATE `cron`  SET `execute_time` = 1645436039  WHERE  `id` = 10 [ RunTime:0.002570s ]
+[2022-02-21T17:33:51+08:00][info] 检测事件执行2022-02-21 17:33:51
+[2022-02-21T17:33:51+08:00][sql] CONNECT:[ UseTime:0.001251s ] mysql:host=127.0.0.1;port=3306;dbname=niushop1;charset=utf8
+[2022-02-21T17:33:51+08:00][sql] SELECT `id`,`type`,`period`,`period_type`,`name`,`event`,`execute_time`,`relate_id`,`create_time` FROM `cron` WHERE  `execute_time` <= 1645436031 [ RunTime:0.000788s ]
+[2022-02-21T17:34:29+08:00][info] 检测事件执行2022-02-21 17:34:29
+[2022-02-21T17:34:29+08:00][sql] CONNECT:[ UseTime:0.001949s ] mysql:host=127.0.0.1;port=3306;dbname=niushop1;charset=utf8
+[2022-02-21T17:34:29+08:00][sql] SELECT `id`,`type`,`period`,`period_type`,`name`,`event`,`execute_time`,`relate_id`,`create_time` FROM `cron` WHERE  `execute_time` <= 1645436069 [ RunTime:0.000673s ]
+[2022-02-21T17:34:29+08:00][sql] UPDATE `promotion_coupon`  SET `state` = 3  WHERE  `state` = 1  AND `end_time` <= 1645436069 [ RunTime:0.000588s ]
+[2022-02-21T17:34:29+08:00][cron] event:data{"id":2,"type":2,"period":1,"period_type":0,"name":"\u4f18\u60e0\u5238\u8fc7\u671f\u81ea\u52a8\u5173\u95ed","event":"CronCouponEnd","execute_time":1645436037,"relate_id":0,"create_time":1645435317}
+[2022-02-21T17:34:29+08:00][sql] UPDATE `cron`  SET `execute_time` = 1645436097  WHERE  `id` = 2 [ RunTime:0.003876s ]
+[2022-02-21T17:34:29+08:00][sql] UPDATE `promotion_platformcoupon`  SET `state` = 3  WHERE  `state` = 1  AND `end_time` <= 1645436069 [ RunTime:0.000496s ]
+[2022-02-21T17:34:29+08:00][cron] event:data{"id":5,"type":2,"period":1,"period_type":0,"name":"\u5e73\u53f0\u4f18\u60e0\u5238\u8fc7\u671f\u81ea\u52a8\u5173\u95ed","event":"CronPlatformcouponEnd","execute_time":1645436038,"relate_id":0,"create_time":1645435318}
+[2022-02-21T17:34:29+08:00][sql] UPDATE `cron`  SET `execute_time` = 1645436098  WHERE  `id` = 5 [ RunTime:0.002301s ]
+[2022-02-21T17:34:29+08:00][sql] SELECT `rule_json`,`cluster_id` FROM `member_cluster` [ RunTime:0.000419s ]
+[2022-02-21T17:34:29+08:00][cron] event:data{"id":10,"type":2,"period":1,"period_type":0,"name":"\u4f1a\u5458\u7fa4\u4f53\u5b9a\u65f6\u5237\u65b0","event":"CronMemberClusterRefresh","execute_time":1645436039,"relate_id":0,"create_time":1645435319}
+[2022-02-21T17:34:29+08:00][sql] UPDATE `cron`  SET `execute_time` = 1645436099  WHERE  `id` = 10 [ RunTime:0.002812s ]
+[2022-02-21T17:34:51+08:00][info] 检测事件执行2022-02-21 17:34:51
+[2022-02-21T17:34:51+08:00][sql] CONNECT:[ UseTime:0.001789s ] mysql:host=127.0.0.1;port=3306;dbname=niushop1;charset=utf8
+[2022-02-21T17:34:51+08:00][sql] SELECT `id`,`type`,`period`,`period_type`,`name`,`event`,`execute_time`,`relate_id`,`create_time` FROM `cron` WHERE  `execute_time` <= 1645436091 [ RunTime:0.001111s ]
+[2022-02-21T17:35:30+08:00][info] 检测事件执行2022-02-21 17:35:30
+[2022-02-21T17:35:30+08:00][sql] CONNECT:[ UseTime:0.001398s ] mysql:host=127.0.0.1;port=3306;dbname=niushop1;charset=utf8
+[2022-02-21T17:35:30+08:00][sql] SELECT `id`,`type`,`period`,`period_type`,`name`,`event`,`execute_time`,`relate_id`,`create_time` FROM `cron` WHERE  `execute_time` <= 1645436130 [ RunTime:0.001025s ]
+[2022-02-21T17:35:30+08:00][sql] UPDATE `promotion_coupon`  SET `state` = 3  WHERE  `state` = 1  AND `end_time` <= 1645436130 [ RunTime:0.000779s ]
+[2022-02-21T17:35:30+08:00][cron] event:data{"id":2,"type":2,"period":1,"period_type":0,"name":"\u4f18\u60e0\u5238\u8fc7\u671f\u81ea\u52a8\u5173\u95ed","event":"CronCouponEnd","execute_time":1645436097,"relate_id":0,"create_time":1645435317}
+[2022-02-21T17:35:30+08:00][sql] UPDATE `cron`  SET `execute_time` = 1645436157  WHERE  `id` = 2 [ RunTime:0.008245s ]
+[2022-02-21T17:35:30+08:00][sql] UPDATE `promotion_platformcoupon`  SET `state` = 3  WHERE  `state` = 1  AND `end_time` <= 1645436130 [ RunTime:0.000648s ]
+[2022-02-21T17:35:30+08:00][cron] event:data{"id":5,"type":2,"period":1,"period_type":0,"name":"\u5e73\u53f0\u4f18\u60e0\u5238\u8fc7\u671f\u81ea\u52a8\u5173\u95ed","event":"CronPlatformcouponEnd","execute_time":1645436098,"relate_id":0,"create_time":1645435318}
+[2022-02-21T17:35:30+08:00][sql] UPDATE `cron`  SET `execute_time` = 1645436158  WHERE  `id` = 5 [ RunTime:0.002359s ]
+[2022-02-21T17:35:30+08:00][sql] SELECT `rule_json`,`cluster_id` FROM `member_cluster` [ RunTime:0.000573s ]
+[2022-02-21T17:35:30+08:00][cron] event:data{"id":10,"type":2,"period":1,"period_type":0,"name":"\u4f1a\u5458\u7fa4\u4f53\u5b9a\u65f6\u5237\u65b0","event":"CronMemberClusterRefresh","execute_time":1645436099,"relate_id":0,"create_time":1645435319}
+[2022-02-21T17:35:30+08:00][sql] UPDATE `cron`  SET `execute_time` = 1645436159  WHERE  `id` = 10 [ RunTime:0.002644s ]
+[2022-02-21T17:35:51+08:00][info] 检测事件执行2022-02-21 17:35:51
+[2022-02-21T17:35:51+08:00][sql] CONNECT:[ UseTime:0.001758s ] mysql:host=127.0.0.1;port=3306;dbname=niushop1;charset=utf8
+[2022-02-21T17:35:51+08:00][sql] SELECT `id`,`type`,`period`,`period_type`,`name`,`event`,`execute_time`,`relate_id`,`create_time` FROM `cron` WHERE  `execute_time` <= 1645436151 [ RunTime:0.000919s ]
+[2022-02-21T17:36:30+08:00][info] 检测事件执行2022-02-21 17:36:30
+[2022-02-21T17:36:30+08:00][sql] CONNECT:[ UseTime:0.000817s ] mysql:host=127.0.0.1;port=3306;dbname=niushop1;charset=utf8
+[2022-02-21T17:36:30+08:00][sql] SELECT `id`,`type`,`period`,`period_type`,`name`,`event`,`execute_time`,`relate_id`,`create_time` FROM `cron` WHERE  `execute_time` <= 1645436190 [ RunTime:0.000796s ]
+[2022-02-21T17:36:30+08:00][sql] UPDATE `promotion_coupon`  SET `state` = 3  WHERE  `state` = 1  AND `end_time` <= 1645436190 [ RunTime:0.000929s ]
+[2022-02-21T17:36:30+08:00][cron] event:data{"id":2,"type":2,"period":1,"period_type":0,"name":"\u4f18\u60e0\u5238\u8fc7\u671f\u81ea\u52a8\u5173\u95ed","event":"CronCouponEnd","execute_time":1645436157,"relate_id":0,"create_time":1645435317}
+[2022-02-21T17:36:30+08:00][sql] UPDATE `cron`  SET `execute_time` = 1645436217  WHERE  `id` = 2 [ RunTime:0.007803s ]
+[2022-02-21T17:36:30+08:00][sql] UPDATE `promotion_platformcoupon`  SET `state` = 3  WHERE  `state` = 1  AND `end_time` <= 1645436190 [ RunTime:0.000591s ]
+[2022-02-21T17:36:30+08:00][cron] event:data{"id":5,"type":2,"period":1,"period_type":0,"name":"\u5e73\u53f0\u4f18\u60e0\u5238\u8fc7\u671f\u81ea\u52a8\u5173\u95ed","event":"CronPlatformcouponEnd","execute_time":1645436158,"relate_id":0,"create_time":1645435318}
+[2022-02-21T17:36:30+08:00][sql] UPDATE `cron`  SET `execute_time` = 1645436218  WHERE  `id` = 5 [ RunTime:0.002427s ]
+[2022-02-21T17:36:30+08:00][sql] SELECT `rule_json`,`cluster_id` FROM `member_cluster` [ RunTime:0.000708s ]
+[2022-02-21T17:36:30+08:00][cron] event:data{"id":10,"type":2,"period":1,"period_type":0,"name":"\u4f1a\u5458\u7fa4\u4f53\u5b9a\u65f6\u5237\u65b0","event":"CronMemberClusterRefresh","execute_time":1645436159,"relate_id":0,"create_time":1645435319}
+[2022-02-21T17:36:30+08:00][sql] UPDATE `cron`  SET `execute_time` = 1645436219  WHERE  `id` = 10 [ RunTime:0.002245s ]
+[2022-02-21T17:36:52+08:00][info] 检测事件执行2022-02-21 17:36:52
+[2022-02-21T17:36:52+08:00][sql] CONNECT:[ UseTime:0.001418s ] mysql:host=127.0.0.1;port=3306;dbname=niushop1;charset=utf8
+[2022-02-21T17:36:52+08:00][sql] SELECT `id`,`type`,`period`,`period_type`,`name`,`event`,`execute_time`,`relate_id`,`create_time` FROM `cron` WHERE  `execute_time` <= 1645436212 [ RunTime:0.000761s ]
+[2022-02-21T17:37:30+08:00][info] 检测事件执行2022-02-21 17:37:30
+[2022-02-21T17:37:30+08:00][sql] CONNECT:[ UseTime:0.001135s ] mysql:host=127.0.0.1;port=3306;dbname=niushop1;charset=utf8
+[2022-02-21T17:37:30+08:00][sql] SELECT `id`,`type`,`period`,`period_type`,`name`,`event`,`execute_time`,`relate_id`,`create_time` FROM `cron` WHERE  `execute_time` <= 1645436250 [ RunTime:0.000841s ]
+[2022-02-21T17:37:31+08:00][sql] UPDATE `promotion_coupon`  SET `state` = 3  WHERE  `state` = 1  AND `end_time` <= 1645436251 [ RunTime:0.000634s ]
+[2022-02-21T17:37:31+08:00][cron] event:data{"id":2,"type":2,"period":1,"period_type":0,"name":"\u4f18\u60e0\u5238\u8fc7\u671f\u81ea\u52a8\u5173\u95ed","event":"CronCouponEnd","execute_time":1645436217,"relate_id":0,"create_time":1645435317}
+[2022-02-21T17:37:31+08:00][sql] UPDATE `cron`  SET `execute_time` = 1645436277  WHERE  `id` = 2 [ RunTime:0.003228s ]
+[2022-02-21T17:37:31+08:00][sql] UPDATE `promotion_platformcoupon`  SET `state` = 3  WHERE  `state` = 1  AND `end_time` <= 1645436251 [ RunTime:0.000436s ]
+[2022-02-21T17:37:31+08:00][cron] event:data{"id":5,"type":2,"period":1,"period_type":0,"name":"\u5e73\u53f0\u4f18\u60e0\u5238\u8fc7\u671f\u81ea\u52a8\u5173\u95ed","event":"CronPlatformcouponEnd","execute_time":1645436218,"relate_id":0,"create_time":1645435318}
+[2022-02-21T17:37:31+08:00][sql] UPDATE `cron`  SET `execute_time` = 1645436278  WHERE  `id` = 5 [ RunTime:0.002106s ]
+[2022-02-21T17:37:31+08:00][sql] SELECT `rule_json`,`cluster_id` FROM `member_cluster` [ RunTime:0.000408s ]
+[2022-02-21T17:37:31+08:00][cron] event:data{"id":10,"type":2,"period":1,"period_type":0,"name":"\u4f1a\u5458\u7fa4\u4f53\u5b9a\u65f6\u5237\u65b0","event":"CronMemberClusterRefresh","execute_time":1645436219,"relate_id":0,"create_time":1645435319}
+[2022-02-21T17:37:31+08:00][sql] UPDATE `cron`  SET `execute_time` = 1645436279  WHERE  `id` = 10 [ RunTime:0.001987s ]
+[2022-02-21T17:37:52+08:00][info] 检测事件执行2022-02-21 17:37:52
+[2022-02-21T17:37:52+08:00][sql] CONNECT:[ UseTime:0.001141s ] mysql:host=127.0.0.1;port=3306;dbname=niushop1;charset=utf8
+[2022-02-21T17:37:52+08:00][sql] SELECT `id`,`type`,`period`,`period_type`,`name`,`event`,`execute_time`,`relate_id`,`create_time` FROM `cron` WHERE  `execute_time` <= 1645436272 [ RunTime:0.000695s ]
+[2022-02-21T17:38:31+08:00][info] 检测事件执行2022-02-21 17:38:31
+[2022-02-21T17:38:31+08:00][sql] CONNECT:[ UseTime:0.000755s ] mysql:host=127.0.0.1;port=3306;dbname=niushop1;charset=utf8
+[2022-02-21T17:38:31+08:00][sql] SELECT `id`,`type`,`period`,`period_type`,`name`,`event`,`execute_time`,`relate_id`,`create_time` FROM `cron` WHERE  `execute_time` <= 1645436311 [ RunTime:0.000803s ]
+[2022-02-21T17:38:31+08:00][sql] UPDATE `promotion_coupon`  SET `state` = 3  WHERE  `state` = 1  AND `end_time` <= 1645436311 [ RunTime:0.000649s ]
+[2022-02-21T17:38:31+08:00][cron] event:data{"id":2,"type":2,"period":1,"period_type":0,"name":"\u4f18\u60e0\u5238\u8fc7\u671f\u81ea\u52a8\u5173\u95ed","event":"CronCouponEnd","execute_time":1645436277,"relate_id":0,"create_time":1645435317}
+[2022-02-21T17:38:31+08:00][sql] UPDATE `cron`  SET `execute_time` = 1645436337  WHERE  `id` = 2 [ RunTime:0.009361s ]
+[2022-02-21T17:38:31+08:00][sql] UPDATE `promotion_platformcoupon`  SET `state` = 3  WHERE  `state` = 1  AND `end_time` <= 1645436311 [ RunTime:0.000534s ]
+[2022-02-21T17:38:31+08:00][cron] event:data{"id":5,"type":2,"period":1,"period_type":0,"name":"\u5e73\u53f0\u4f18\u60e0\u5238\u8fc7\u671f\u81ea\u52a8\u5173\u95ed","event":"CronPlatformcouponEnd","execute_time":1645436278,"relate_id":0,"create_time":1645435318}
+[2022-02-21T17:38:31+08:00][sql] UPDATE `cron`  SET `execute_time` = 1645436338  WHERE  `id` = 5 [ RunTime:0.003050s ]
+[2022-02-21T17:38:31+08:00][sql] SELECT `rule_json`,`cluster_id` FROM `member_cluster` [ RunTime:0.000422s ]
+[2022-02-21T17:38:31+08:00][cron] event:data{"id":10,"type":2,"period":1,"period_type":0,"name":"\u4f1a\u5458\u7fa4\u4f53\u5b9a\u65f6\u5237\u65b0","event":"CronMemberClusterRefresh","execute_time":1645436279,"relate_id":0,"create_time":1645435319}
+[2022-02-21T17:38:31+08:00][sql] UPDATE `cron`  SET `execute_time` = 1645436339  WHERE  `id` = 10 [ RunTime:0.003119s ]
+[2022-02-21T17:38:52+08:00][info] 检测事件执行2022-02-21 17:38:52
+[2022-02-21T17:38:52+08:00][sql] CONNECT:[ UseTime:0.000972s ] mysql:host=127.0.0.1;port=3306;dbname=niushop1;charset=utf8
+[2022-02-21T17:38:52+08:00][sql] SELECT `id`,`type`,`period`,`period_type`,`name`,`event`,`execute_time`,`relate_id`,`create_time` FROM `cron` WHERE  `execute_time` <= 1645436332 [ RunTime:0.000743s ]
+[2022-02-21T17:39:31+08:00][info] 检测事件执行2022-02-21 17:39:31
+[2022-02-21T17:39:31+08:00][sql] CONNECT:[ UseTime:0.002534s ] mysql:host=127.0.0.1;port=3306;dbname=niushop1;charset=utf8
+[2022-02-21T17:39:31+08:00][sql] SELECT `id`,`type`,`period`,`period_type`,`name`,`event`,`execute_time`,`relate_id`,`create_time` FROM `cron` WHERE  `execute_time` <= 1645436371 [ RunTime:0.001006s ]
+[2022-02-21T17:39:31+08:00][sql] UPDATE `promotion_coupon`  SET `state` = 3  WHERE  `state` = 1  AND `end_time` <= 1645436371 [ RunTime:0.000679s ]
+[2022-02-21T17:39:31+08:00][cron] event:data{"id":2,"type":2,"period":1,"period_type":0,"name":"\u4f18\u60e0\u5238\u8fc7\u671f\u81ea\u52a8\u5173\u95ed","event":"CronCouponEnd","execute_time":1645436337,"relate_id":0,"create_time":1645435317}
+[2022-02-21T17:39:31+08:00][sql] UPDATE `cron`  SET `execute_time` = 1645436397  WHERE  `id` = 2 [ RunTime:0.010096s ]
+[2022-02-21T17:39:31+08:00][sql] UPDATE `promotion_platformcoupon`  SET `state` = 3  WHERE  `state` = 1  AND `end_time` <= 1645436371 [ RunTime:0.000789s ]
+[2022-02-21T17:39:31+08:00][cron] event:data{"id":5,"type":2,"period":1,"period_type":0,"name":"\u5e73\u53f0\u4f18\u60e0\u5238\u8fc7\u671f\u81ea\u52a8\u5173\u95ed","event":"CronPlatformcouponEnd","execute_time":1645436338,"relate_id":0,"create_time":1645435318}
+[2022-02-21T17:39:31+08:00][sql] UPDATE `cron`  SET `execute_time` = 1645436398  WHERE  `id` = 5 [ RunTime:0.004156s ]
+[2022-02-21T17:39:31+08:00][sql] SELECT `rule_json`,`cluster_id` FROM `member_cluster` [ RunTime:0.000753s ]
+[2022-02-21T17:39:31+08:00][cron] event:data{"id":10,"type":2,"period":1,"period_type":0,"name":"\u4f1a\u5458\u7fa4\u4f53\u5b9a\u65f6\u5237\u65b0","event":"CronMemberClusterRefresh","execute_time":1645436339,"relate_id":0,"create_time":1645435319}
+[2022-02-21T17:39:31+08:00][sql] UPDATE `cron`  SET `execute_time` = 1645436399  WHERE  `id` = 10 [ RunTime:0.003287s ]
+[2022-02-21T17:39:52+08:00][info] 检测事件执行2022-02-21 17:39:52
+[2022-02-21T17:39:52+08:00][sql] CONNECT:[ UseTime:0.001152s ] mysql:host=127.0.0.1;port=3306;dbname=niushop1;charset=utf8
+[2022-02-21T17:39:52+08:00][sql] SELECT `id`,`type`,`period`,`period_type`,`name`,`event`,`execute_time`,`relate_id`,`create_time` FROM `cron` WHERE  `execute_time` <= 1645436392 [ RunTime:0.000796s ]
+[2022-02-21T17:40:31+08:00][info] 检测事件执行2022-02-21 17:40:31
+[2022-02-21T17:40:31+08:00][sql] CONNECT:[ UseTime:0.001585s ] mysql:host=127.0.0.1;port=3306;dbname=niushop1;charset=utf8
+[2022-02-21T17:40:31+08:00][sql] SELECT `id`,`type`,`period`,`period_type`,`name`,`event`,`execute_time`,`relate_id`,`create_time` FROM `cron` WHERE  `execute_time` <= 1645436431 [ RunTime:0.001198s ]
+[2022-02-21T17:40:31+08:00][sql] UPDATE `promotion_coupon`  SET `state` = 3  WHERE  `state` = 1  AND `end_time` <= 1645436431 [ RunTime:0.000991s ]
+[2022-02-21T17:40:31+08:00][cron] event:data{"id":2,"type":2,"period":1,"period_type":0,"name":"\u4f18\u60e0\u5238\u8fc7\u671f\u81ea\u52a8\u5173\u95ed","event":"CronCouponEnd","execute_time":1645436397,"relate_id":0,"create_time":1645435317}
+[2022-02-21T17:40:31+08:00][sql] UPDATE `cron`  SET `execute_time` = 1645436457  WHERE  `id` = 2 [ RunTime:0.008876s ]
+[2022-02-21T17:40:31+08:00][sql] UPDATE `promotion_platformcoupon`  SET `state` = 3  WHERE  `state` = 1  AND `end_time` <= 1645436431 [ RunTime:0.000753s ]
+[2022-02-21T17:40:31+08:00][cron] event:data{"id":5,"type":2,"period":1,"period_type":0,"name":"\u5e73\u53f0\u4f18\u60e0\u5238\u8fc7\u671f\u81ea\u52a8\u5173\u95ed","event":"CronPlatformcouponEnd","execute_time":1645436398,"relate_id":0,"create_time":1645435318}
+[2022-02-21T17:40:31+08:00][sql] UPDATE `cron`  SET `execute_time` = 1645436458  WHERE  `id` = 5 [ RunTime:0.003812s ]
+[2022-02-21T17:40:31+08:00][sql] SELECT `rule_json`,`cluster_id` FROM `member_cluster` [ RunTime:0.000616s ]
+[2022-02-21T17:40:31+08:00][cron] event:data{"id":10,"type":2,"period":1,"period_type":0,"name":"\u4f1a\u5458\u7fa4\u4f53\u5b9a\u65f6\u5237\u65b0","event":"CronMemberClusterRefresh","execute_time":1645436399,"relate_id":0,"create_time":1645435319}
+[2022-02-21T17:40:31+08:00][sql] UPDATE `cron`  SET `execute_time` = 1645436459  WHERE  `id` = 10 [ RunTime:0.003452s ]
+[2022-02-21T17:40:52+08:00][info] 检测事件执行2022-02-21 17:40:52
+[2022-02-21T17:40:52+08:00][sql] CONNECT:[ UseTime:0.001413s ] mysql:host=127.0.0.1;port=3306;dbname=niushop1;charset=utf8
+[2022-02-21T17:40:52+08:00][sql] SELECT `id`,`type`,`period`,`period_type`,`name`,`event`,`execute_time`,`relate_id`,`create_time` FROM `cron` WHERE  `execute_time` <= 1645436452 [ RunTime:0.001006s ]
+[2022-02-21T17:41:31+08:00][info] 检测事件执行2022-02-21 17:41:31
+[2022-02-21T17:41:31+08:00][sql] CONNECT:[ UseTime:0.001004s ] mysql:host=127.0.0.1;port=3306;dbname=niushop1;charset=utf8
+[2022-02-21T17:41:31+08:00][sql] SELECT `id`,`type`,`period`,`period_type`,`name`,`event`,`execute_time`,`relate_id`,`create_time` FROM `cron` WHERE  `execute_time` <= 1645436491 [ RunTime:0.000836s ]
+[2022-02-21T17:41:31+08:00][sql] UPDATE `promotion_coupon`  SET `state` = 3  WHERE  `state` = 1  AND `end_time` <= 1645436491 [ RunTime:0.000738s ]
+[2022-02-21T17:41:31+08:00][cron] event:data{"id":2,"type":2,"period":1,"period_type":0,"name":"\u4f18\u60e0\u5238\u8fc7\u671f\u81ea\u52a8\u5173\u95ed","event":"CronCouponEnd","execute_time":1645436457,"relate_id":0,"create_time":1645435317}
+[2022-02-21T17:41:31+08:00][sql] UPDATE `cron`  SET `execute_time` = 1645436517  WHERE  `id` = 2 [ RunTime:0.008457s ]
+[2022-02-21T17:41:31+08:00][sql] UPDATE `promotion_platformcoupon`  SET `state` = 3  WHERE  `state` = 1  AND `end_time` <= 1645436491 [ RunTime:0.000577s ]
+[2022-02-21T17:41:31+08:00][cron] event:data{"id":5,"type":2,"period":1,"period_type":0,"name":"\u5e73\u53f0\u4f18\u60e0\u5238\u8fc7\u671f\u81ea\u52a8\u5173\u95ed","event":"CronPlatformcouponEnd","execute_time":1645436458,"relate_id":0,"create_time":1645435318}
+[2022-02-21T17:41:31+08:00][sql] UPDATE `cron`  SET `execute_time` = 1645436518  WHERE  `id` = 5 [ RunTime:0.003415s ]
+[2022-02-21T17:41:31+08:00][sql] SELECT `rule_json`,`cluster_id` FROM `member_cluster` [ RunTime:0.000516s ]
+[2022-02-21T17:41:31+08:00][cron] event:data{"id":10,"type":2,"period":1,"period_type":0,"name":"\u4f1a\u5458\u7fa4\u4f53\u5b9a\u65f6\u5237\u65b0","event":"CronMemberClusterRefresh","execute_time":1645436459,"relate_id":0,"create_time":1645435319}
+[2022-02-21T17:41:31+08:00][sql] UPDATE `cron`  SET `execute_time` = 1645436519  WHERE  `id` = 10 [ RunTime:0.002983s ]
+[2022-02-21T17:41:52+08:00][info] 检测事件执行2022-02-21 17:41:52
+[2022-02-21T17:41:52+08:00][sql] CONNECT:[ UseTime:0.001117s ] mysql:host=127.0.0.1;port=3306;dbname=niushop1;charset=utf8
+[2022-02-21T17:41:52+08:00][sql] SELECT `id`,`type`,`period`,`period_type`,`name`,`event`,`execute_time`,`relate_id`,`create_time` FROM `cron` WHERE  `execute_time` <= 1645436512 [ RunTime:0.000693s ]
+[2022-02-21T17:42:31+08:00][info] 检测事件执行2022-02-21 17:42:31
+[2022-02-21T17:42:31+08:00][sql] CONNECT:[ UseTime:0.001498s ] mysql:host=127.0.0.1;port=3306;dbname=niushop1;charset=utf8
+[2022-02-21T17:42:31+08:00][sql] SELECT `id`,`type`,`period`,`period_type`,`name`,`event`,`execute_time`,`relate_id`,`create_time` FROM `cron` WHERE  `execute_time` <= 1645436551 [ RunTime:0.000758s ]
+[2022-02-21T17:42:31+08:00][sql] UPDATE `promotion_coupon`  SET `state` = 3  WHERE  `state` = 1  AND `end_time` <= 1645436551 [ RunTime:0.000620s ]
+[2022-02-21T17:42:31+08:00][cron] event:data{"id":2,"type":2,"period":1,"period_type":0,"name":"\u4f18\u60e0\u5238\u8fc7\u671f\u81ea\u52a8\u5173\u95ed","event":"CronCouponEnd","execute_time":1645436517,"relate_id":0,"create_time":1645435317}
+[2022-02-21T17:42:31+08:00][sql] UPDATE `cron`  SET `execute_time` = 1645436577  WHERE  `id` = 2 [ RunTime:0.008045s ]
+[2022-02-21T17:42:31+08:00][sql] UPDATE `promotion_platformcoupon`  SET `state` = 3  WHERE  `state` = 1  AND `end_time` <= 1645436551 [ RunTime:0.000488s ]
+[2022-02-21T17:42:31+08:00][cron] event:data{"id":5,"type":2,"period":1,"period_type":0,"name":"\u5e73\u53f0\u4f18\u60e0\u5238\u8fc7\u671f\u81ea\u52a8\u5173\u95ed","event":"CronPlatformcouponEnd","execute_time":1645436518,"relate_id":0,"create_time":1645435318}
+[2022-02-21T17:42:31+08:00][sql] UPDATE `cron`  SET `execute_time` = 1645436578  WHERE  `id` = 5 [ RunTime:0.002272s ]
+[2022-02-21T17:42:31+08:00][sql] SELECT `rule_json`,`cluster_id` FROM `member_cluster` [ RunTime:0.000467s ]
+[2022-02-21T17:42:31+08:00][cron] event:data{"id":10,"type":2,"period":1,"period_type":0,"name":"\u4f1a\u5458\u7fa4\u4f53\u5b9a\u65f6\u5237\u65b0","event":"CronMemberClusterRefresh","execute_time":1645436519,"relate_id":0,"create_time":1645435319}
+[2022-02-21T17:42:31+08:00][sql] UPDATE `cron`  SET `execute_time` = 1645436579  WHERE  `id` = 10 [ RunTime:0.002360s ]
+[2022-02-21T17:42:52+08:00][info] 检测事件执行2022-02-21 17:42:52
+[2022-02-21T17:42:52+08:00][sql] CONNECT:[ UseTime:0.001123s ] mysql:host=127.0.0.1;port=3306;dbname=niushop1;charset=utf8
+[2022-02-21T17:42:52+08:00][sql] SELECT `id`,`type`,`period`,`period_type`,`name`,`event`,`execute_time`,`relate_id`,`create_time` FROM `cron` WHERE  `execute_time` <= 1645436572 [ RunTime:0.000881s ]
+[2022-02-21T17:43:31+08:00][info] 检测事件执行2022-02-21 17:43:31
+[2022-02-21T17:43:31+08:00][sql] CONNECT:[ UseTime:0.001170s ] mysql:host=127.0.0.1;port=3306;dbname=niushop1;charset=utf8
+[2022-02-21T17:43:31+08:00][sql] SELECT `id`,`type`,`period`,`period_type`,`name`,`event`,`execute_time`,`relate_id`,`create_time` FROM `cron` WHERE  `execute_time` <= 1645436611 [ RunTime:0.000961s ]
+[2022-02-21T17:43:31+08:00][sql] UPDATE `promotion_coupon`  SET `state` = 3  WHERE  `state` = 1  AND `end_time` <= 1645436611 [ RunTime:0.000696s ]
+[2022-02-21T17:43:31+08:00][cron] event:data{"id":2,"type":2,"period":1,"period_type":0,"name":"\u4f18\u60e0\u5238\u8fc7\u671f\u81ea\u52a8\u5173\u95ed","event":"CronCouponEnd","execute_time":1645436577,"relate_id":0,"create_time":1645435317}
+[2022-02-21T17:43:31+08:00][sql] UPDATE `cron`  SET `execute_time` = 1645436637  WHERE  `id` = 2 [ RunTime:0.008476s ]
+[2022-02-21T17:43:31+08:00][sql] UPDATE `promotion_platformcoupon`  SET `state` = 3  WHERE  `state` = 1  AND `end_time` <= 1645436611 [ RunTime:0.000436s ]
+[2022-02-21T17:43:31+08:00][cron] event:data{"id":5,"type":2,"period":1,"period_type":0,"name":"\u5e73\u53f0\u4f18\u60e0\u5238\u8fc7\u671f\u81ea\u52a8\u5173\u95ed","event":"CronPlatformcouponEnd","execute_time":1645436578,"relate_id":0,"create_time":1645435318}
+[2022-02-21T17:43:31+08:00][sql] UPDATE `cron`  SET `execute_time` = 1645436638  WHERE  `id` = 5 [ RunTime:0.002970s ]
+[2022-02-21T17:43:31+08:00][sql] SELECT `rule_json`,`cluster_id` FROM `member_cluster` [ RunTime:0.000395s ]
+[2022-02-21T17:43:31+08:00][cron] event:data{"id":10,"type":2,"period":1,"period_type":0,"name":"\u4f1a\u5458\u7fa4\u4f53\u5b9a\u65f6\u5237\u65b0","event":"CronMemberClusterRefresh","execute_time":1645436579,"relate_id":0,"create_time":1645435319}
+[2022-02-21T17:43:31+08:00][sql] UPDATE `cron`  SET `execute_time` = 1645436639  WHERE  `id` = 10 [ RunTime:0.002236s ]
+[2022-02-21T17:43:52+08:00][info] 检测事件执行2022-02-21 17:43:52
+[2022-02-21T17:43:52+08:00][sql] CONNECT:[ UseTime:0.001023s ] mysql:host=127.0.0.1;port=3306;dbname=niushop1;charset=utf8
+[2022-02-21T17:43:52+08:00][sql] SELECT `id`,`type`,`period`,`period_type`,`name`,`event`,`execute_time`,`relate_id`,`create_time` FROM `cron` WHERE  `execute_time` <= 1645436632 [ RunTime:0.000900s ]
+[2022-02-21T17:44:31+08:00][info] 检测事件执行2022-02-21 17:44:31
+[2022-02-21T17:44:31+08:00][sql] CONNECT:[ UseTime:0.001140s ] mysql:host=127.0.0.1;port=3306;dbname=niushop1;charset=utf8
+[2022-02-21T17:44:31+08:00][sql] SELECT `id`,`type`,`period`,`period_type`,`name`,`event`,`execute_time`,`relate_id`,`create_time` FROM `cron` WHERE  `execute_time` <= 1645436671 [ RunTime:0.000867s ]
+[2022-02-21T17:44:31+08:00][sql] UPDATE `promotion_coupon`  SET `state` = 3  WHERE  `state` = 1  AND `end_time` <= 1645436671 [ RunTime:0.000658s ]
+[2022-02-21T17:44:31+08:00][cron] event:data{"id":2,"type":2,"period":1,"period_type":0,"name":"\u4f18\u60e0\u5238\u8fc7\u671f\u81ea\u52a8\u5173\u95ed","event":"CronCouponEnd","execute_time":1645436637,"relate_id":0,"create_time":1645435317}
+[2022-02-21T17:44:31+08:00][sql] UPDATE `cron`  SET `execute_time` = 1645436697  WHERE  `id` = 2 [ RunTime:0.003033s ]
+[2022-02-21T17:44:31+08:00][sql] UPDATE `promotion_platformcoupon`  SET `state` = 3  WHERE  `state` = 1  AND `end_time` <= 1645436671 [ RunTime:0.000508s ]
+[2022-02-21T17:44:31+08:00][cron] event:data{"id":5,"type":2,"period":1,"period_type":0,"name":"\u5e73\u53f0\u4f18\u60e0\u5238\u8fc7\u671f\u81ea\u52a8\u5173\u95ed","event":"CronPlatformcouponEnd","execute_time":1645436638,"relate_id":0,"create_time":1645435318}
+[2022-02-21T17:44:31+08:00][sql] UPDATE `cron`  SET `execute_time` = 1645436698  WHERE  `id` = 5 [ RunTime:0.002483s ]
+[2022-02-21T17:44:31+08:00][sql] SELECT `rule_json`,`cluster_id` FROM `member_cluster` [ RunTime:0.000429s ]
+[2022-02-21T17:44:31+08:00][cron] event:data{"id":10,"type":2,"period":1,"period_type":0,"name":"\u4f1a\u5458\u7fa4\u4f53\u5b9a\u65f6\u5237\u65b0","event":"CronMemberClusterRefresh","execute_time":1645436639,"relate_id":0,"create_time":1645435319}
+[2022-02-21T17:44:31+08:00][sql] UPDATE `cron`  SET `execute_time` = 1645436699  WHERE  `id` = 10 [ RunTime:0.002629s ]
+[2022-02-21T17:44:52+08:00][info] 检测事件执行2022-02-21 17:44:52
+[2022-02-21T17:44:52+08:00][sql] CONNECT:[ UseTime:0.001820s ] mysql:host=127.0.0.1;port=3306;dbname=niushop1;charset=utf8
+[2022-02-21T17:44:52+08:00][sql] SELECT `id`,`type`,`period`,`period_type`,`name`,`event`,`execute_time`,`relate_id`,`create_time` FROM `cron` WHERE  `execute_time` <= 1645436692 [ RunTime:0.001337s ]
+[2022-02-21T17:45:31+08:00][info] 检测事件执行2022-02-21 17:45:31
+[2022-02-21T17:45:31+08:00][sql] CONNECT:[ UseTime:0.001308s ] mysql:host=127.0.0.1;port=3306;dbname=niushop1;charset=utf8
+[2022-02-21T17:45:31+08:00][sql] SELECT `id`,`type`,`period`,`period_type`,`name`,`event`,`execute_time`,`relate_id`,`create_time` FROM `cron` WHERE  `execute_time` <= 1645436731 [ RunTime:0.001207s ]
+[2022-02-21T17:45:31+08:00][sql] UPDATE `promotion_coupon`  SET `state` = 3  WHERE  `state` = 1  AND `end_time` <= 1645436731 [ RunTime:0.000973s ]
+[2022-02-21T17:45:31+08:00][cron] event:data{"id":2,"type":2,"period":1,"period_type":0,"name":"\u4f18\u60e0\u5238\u8fc7\u671f\u81ea\u52a8\u5173\u95ed","event":"CronCouponEnd","execute_time":1645436697,"relate_id":0,"create_time":1645435317}
+[2022-02-21T17:45:31+08:00][sql] UPDATE `cron`  SET `execute_time` = 1645436757  WHERE  `id` = 2 [ RunTime:0.010169s ]
+[2022-02-21T17:45:31+08:00][sql] UPDATE `promotion_platformcoupon`  SET `state` = 3  WHERE  `state` = 1  AND `end_time` <= 1645436731 [ RunTime:0.000657s ]
+[2022-02-21T17:45:31+08:00][cron] event:data{"id":5,"type":2,"period":1,"period_type":0,"name":"\u5e73\u53f0\u4f18\u60e0\u5238\u8fc7\u671f\u81ea\u52a8\u5173\u95ed","event":"CronPlatformcouponEnd","execute_time":1645436698,"relate_id":0,"create_time":1645435318}
+[2022-02-21T17:45:31+08:00][sql] UPDATE `cron`  SET `execute_time` = 1645436758  WHERE  `id` = 5 [ RunTime:0.003507s ]
+[2022-02-21T17:45:31+08:00][sql] SELECT `rule_json`,`cluster_id` FROM `member_cluster` [ RunTime:0.000535s ]
+[2022-02-21T17:45:31+08:00][cron] event:data{"id":10,"type":2,"period":1,"period_type":0,"name":"\u4f1a\u5458\u7fa4\u4f53\u5b9a\u65f6\u5237\u65b0","event":"CronMemberClusterRefresh","execute_time":1645436699,"relate_id":0,"create_time":1645435319}
+[2022-02-21T17:45:31+08:00][sql] UPDATE `cron`  SET `execute_time` = 1645436759  WHERE  `id` = 10 [ RunTime:0.003267s ]
